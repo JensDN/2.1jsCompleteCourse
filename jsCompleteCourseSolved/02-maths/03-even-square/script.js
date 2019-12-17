@@ -12,7 +12,7 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-for (var i = 0; i < 22; i++){
+for (var i = 1; i < 22; i++){
     document.write(i**2 + " ");
 
 }
