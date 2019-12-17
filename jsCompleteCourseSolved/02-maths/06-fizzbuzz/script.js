@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-for (i=1; i<100; i++){
+for (i=1; i<101; i++){
     if (i % 3 && i % 5){
         console.log(i + " ");
     }
