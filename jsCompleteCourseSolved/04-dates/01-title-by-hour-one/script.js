@@ -19,7 +19,7 @@
     if (timeNowHours < 18) {
         targetBe = "Hello"}
 
-    else if (time > 18) {
+    else if (timeNowHours > 18) {
         targetBe = "Good evening"}
 
     else {
