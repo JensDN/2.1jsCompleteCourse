@@ -10,7 +10,34 @@
 // You will have time to focus on it later.
 
 (function() {
+let answer = "";
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        for (i=0; i < 12; i++) {
+            let date = new Date(), y = parseInt(document.getElementById("year").value), m = i;
+            let firstDay = new Date(y, m, 13);
+            console.log(firstDay);
+            unluckyFriday = firstDay.getDay();
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+
+            unluckyMonth = monthNames[firstDay.getMonth()];
+            console.log(unluckyMonth);
+
+            if (unluckyFriday === 5){
+
+
+                answer = answer + " " + unluckyMonth;
+            }
+            else {
+                console.log(answer)
+            }
+        }
+        alert(answer);
+    });
+
+
 
 })();
