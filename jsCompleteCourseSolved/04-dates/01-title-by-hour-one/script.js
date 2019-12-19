@@ -11,26 +11,20 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    let now = new Date();
-    let millisTill18 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 18, 0, 0, 0) - now;
-    if (millisTill18 < 0) {
-        millisTill18 += 86400000; // it's after 18h
+    let targetBe;
+
+
+    let timeNowHours = new Date().getHours();
+
+    if (timeNowHours < 18) {
+        targetBe = "Hello"}
+
+    else if (time > 18) {
+        targetBe = "Good evening"}
+
+    else {
+        targetBe = "You're Millisecond King"
     }
 
-
-    setTimeout(function(){
-        document.getElementById("material").innerHtml="Good Evening"
-    }, millisTill18);
-
-    let millisTill24 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 24, 0, 0, 0) - now;
-    if (millisTill24 < 0) {
-        millisTill24 += 86400000; // it's after 00h
-    }
-
-
-    setTimeout(function(){
-        document.getElementById("material").innerHtml="Hello"
-    }, millisTill24);
-
+    document.getElementById("target").innerHTML = targetBe;
 })();
