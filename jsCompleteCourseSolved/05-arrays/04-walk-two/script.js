@@ -25,9 +25,14 @@
         "raisin",
         "cerise",
     ];
-    fruits.forEach(element => { // arrow function, i know how they work
-        console.log(element);
-    });
+    document.getElementById("run").addEventListener("click", function() {
+        fruits.forEach(element => { // arrow function, i know how they work
+            console.log(element);
+        });
+    })
+
+
+
     // your code here
 
 })();
