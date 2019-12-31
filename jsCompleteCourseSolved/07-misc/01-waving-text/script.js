@@ -44,4 +44,5 @@
     }
     console.log(sineWave(waveText));
     document.getElementById('target').innerHTML = sineWave(waveText);
+
 })();
